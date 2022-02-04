@@ -32,13 +32,13 @@ $(document).ready(function(){
                 $(".target_numberB").text(numberB);
                 $(".target_numberC").text(numberC);
             }
-            if(numberB >= 9){
+            if(numberB > 9){
                 numberB = 0;
                 numberA += 1;
                 $(".target_numberA").text(numberA);
                 $(".target_numberB").text(numberB);
             }
-            if(numberA > 9){
+            if(numberA >= 9){
                 clearInterval(timer);
             }
         };
