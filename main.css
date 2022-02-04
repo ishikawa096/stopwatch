@@ -1,0 +1,9 @@
+.watch {
+    margin: 0px 30px 30px 30px;
+}
+.target_numberA, .target_numberB, .target_numberC, .target_numberD {
+    font-size: 25px;
+}
+input {
+    padding: 10px;
+}
