@@ -42,7 +42,7 @@ $(document).ready(function(){
                 clearInterval(timer);
             }
         };
-        let timer = setInterval(countUp, 1);
+        let timer = setInterval(countUp, 100);
         $(".button_stop").click(function() {
             clearInterval(timer);
             $(".button_start,.button_reset").prop('disabled',false);
