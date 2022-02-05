@@ -20,25 +20,25 @@ $(document).ready(function(){
         const countUp = () => {
             console.log(numberD++);
             $(".target_numberD").text(numberD);
-            if(numberD > 9){
+            if(numberD >= 9){
                 numberD = 0;
                 numberC += 1;
                 $(".target_numberC").text(numberC);
                 $(".target_numberD").text(numberD);
             }
-            if(numberC > 9){
+            if(numberC >= 60){
                 numberC = 0;
                 numberB += 1;
                 $(".target_numberB").text(numberB);
                 $(".target_numberC").text(numberC);
             }
-            if(numberB > 9){
+            if(numberB >= 60){
                 numberB = 0;
                 numberA += 1;
                 $(".target_numberA").text(numberA);
                 $(".target_numberB").text(numberB);
             }
-            if(numberA >= 9){
+            if(numberA >= 99){
                 clearInterval(timer);
             }
         };
